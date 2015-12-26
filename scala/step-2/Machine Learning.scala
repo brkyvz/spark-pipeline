@@ -1,4 +1,4 @@
-// Databricks notebook source exported at Sat, 26 Dec 2015 13:03:49 UTC
+// Databricks notebook source exported at Sat, 26 Dec 2015 14:42:30 UTC
 // MAGIC %md # Step 2: Build your Service
 // MAGIC 
 // MAGIC We will build a recommendation engine using Spark MLlib using Alternating Least Squares (ALS).
@@ -180,3 +180,9 @@ display(nonNull)
 
 // COMMAND ----------
 
+// MAGIC %md ### From here, how you progress is up to you.
+// MAGIC 
+// MAGIC Some possible workflows:
+// MAGIC  - Save the model to an external data store, e.g. Cassandra
+// MAGIC  - Perform Clustering to find similar users, items
+// MAGIC  - Find top-k recommendations for users and also store to external data store
