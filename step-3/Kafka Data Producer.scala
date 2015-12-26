@@ -1,4 +1,4 @@
-// Databricks notebook source exported at Sat, 26 Dec 2015 09:33:06 UTC
+// Databricks notebook source exported at Sat, 26 Dec 2015 09:34:46 UTC
 // MAGIC %md # **Kafka Sensor Data Producer**
 // MAGIC 
 // MAGIC Use this to generate data for running Step 3: Monitoring your Service
@@ -6,8 +6,8 @@
 // COMMAND ----------
 
 // === Configurations for Kafka ===
-val kafkaTopic = "sensor"    // command separated list of topics
-val kafkaBrokers = "52.25.255.200:9092,52.25.255.200:9093"   // comma separated list of broker:host
+val kafkaTopic = "YOUR_KAFKA_TOPICS"    // comma separated list of topics
+val kafkaBrokers = "YOUR_KAFKA_BROKERS"   // comma separated list of broker:host
 
 // === Configurations of amount of data to produce ===
 val numSensors = 5
@@ -50,8 +50,4 @@ for (round <- 1 to numSecondsToSend) {
   }
   Thread.sleep(1000) // Sleep for a second
 }
-
-
-
-// COMMAND ----------
 
