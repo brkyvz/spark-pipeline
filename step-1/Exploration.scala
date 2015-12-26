@@ -1,4 +1,4 @@
-// Databricks notebook source exported at Sat, 26 Dec 2015 13:46:28 UTC
+// Databricks notebook source exported at Sat, 26 Dec 2015 13:47:34 UTC
 // MAGIC %md # Step 1: Understand your Data
 // MAGIC 
 // MAGIC The first step of doing anything with data is taking a look at it.
@@ -83,9 +83,9 @@ df.select(min(ratingColumn), max(ratingColumn)).show()
 
 // COMMAND ----------
 
-val minRating = 1 // copy values from above
-val maxRating = 5 // copy values from above
-val step = 0.5
+val minRating = // copy values from above
+val maxRating = // copy values from above
+val step = 0.5 // change this to your liking
 
 // COMMAND ----------
 
